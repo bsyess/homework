@@ -24,7 +24,8 @@ int main()
 	for(int i = 1;i <= 3;++i) 
 	{
 		if(t[i].id != t[i-1].id) cout << t[i].id <<' ';
-		cout << t[i].num << ' ' << t[i].sum;
+		cout << t[i].num << ' ' ;
+		printf("%.1lf",t[i].sum);
 		if(t[i].id != t[i+1].id) cout << endl;
 		else cout << ' ';
 	}
