@@ -1,10 +1,3 @@
-# homework-
-
-https://paste.ubuntu.com/p/9JRSFPcRRz/
-https://paste.ubuntu.com/p/Kjp5WPM8S3/
-https://paste.ubuntu.com/p/4RXJbHFbft/
-https://paste.ubuntu.com/p/gWP8kjf3Bg/
-https://paste.ubuntu.com/p/dYXFkZVVrN/
 
 
 #include <bits/stdc++.h>
@@ -98,3 +91,158 @@ int main()
 	return 0;	
 } 
 
+#include <bits/stdc++.h>
+using namespace std;
+
+string a[10];
+char c;
+
+int main()
+{
+	a[1] = "1.Input\n";
+	a[2] = "2.Output\n";
+	a[3] = "3.Order\n";
+	a[4] = "4.Quit\n"; 
+	a[5] = "Your are trying to Input info";
+	a[6] = "Your are trying to Output info";
+	a[7] = "our are trying to Make things ordered";
+	a[8] = "You are about to Quit";
+	a[9] = "Wrong Input";
+	
+	for(int i = 1;i <= 4;++i)
+	{
+		int x=30;
+		while(x--)cout << ' ';
+		cout << a[i];
+	}
+	cin >> c;
+	switch(c)
+	{
+		case 'i' : cout << a[5];break;
+		case 'o' : cout << a[6];break;
+		case 'm' : cout << a[7];break;
+		case 'q' : cout << a[8];break;
+		default : cout << a[9];
+	}
+	return 0;	
+} 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+struct data
+{
+	int num,id;
+	double a,b,c,sum;
+}t[5];
+
+bool cmp(data x1,data x2)
+{
+	if(x1.id == x2.id) return x1.sum < x2.sum;
+	else return x1.id > x2.id;
+}
+
+int main()
+{
+	for(int i = 1;i <= 3;++i) 
+	{
+		cin >> t[i].num >> t[i].id >> t[i].a >> t[i].b >> t[i].c;
+		t[i].sum = t[i].a + t[i].b + t[i].c;
+	}
+	sort(t+1,t+4,cmp);
+	for(int i = 1;i <= 3;++i) 
+	{
+		if(t[i].id != t[i-1].id) cout << t[i].id <<' ';
+		cout << t[i].num << ' ' << t[i].sum;
+		if(t[i].id != t[i+1].id) cout << endl;
+		else cout << ' ';
+	}
+	return 0;	
+} 
+
+
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+double x,y,z;
+string a[10];
+char c;
+struct data
+{
+	int id;
+	double sum,ave;
+}t[5];
+
+bool cmp(data x1,data x2)
+{
+	return x1.sum < x2.sum;
+}
+
+int main()
+{
+	a[1] = "1.Input\n";
+	a[2] = "2.Output\n";
+	a[3] = "3.Order\n";
+	a[4] = "4.Quit\n"; 
+	a[5] = "Please input info of the three students:";
+	a[7] = "our are trying to Make things ordered";
+	a[8] = "You are about to Quit";
+	a[9] = "Wrong Input";
+	
+	for(int i = 1;i <= 4;++i)
+	{
+		int x=30;
+		while(x--)cout << ' ';
+		cout << a[i];
+	}
+	cin >> c;
+	switch(c)
+	{
+		case 'i' : cout << a[5];break;
+		case 'm' : cout << a[7];break;
+		case 'q' : cout << a[8];break;
+		default : cout << a[9];
+	}
+	if(c == 'i')
+	{
+		for(int i = 1;i <= 3;i++)
+		{
+			cin >> t[i].id >> x >> y >>z;
+			t[i].sum = x + y + z;
+			t[i].ave = t[i].sum / 3.0;
+		}
+		sort(t+1,t+4,cmp);
+		for(int i = 1;i <= 3;i++)
+			printf("%d,%.1lf,%.1lf\n",t[i].id,t[i].sum,t[i].ave);
+	}
+	return 0;	
+} 
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+struct data
+{
+	int id;
+	double sum,x,y,z;
+}t[5];
+
+int main()
+{
+		for(int i = 1;i <= 3;i++)
+		{
+			cin >> t[i].id >> t[i].x >> t[i].y >> t[i].z;
+			t[i].sum = t[i].x + t[i].y + t[i].z;
+		}
+		for(int i = 1;i <= 3;i++)
+			cout << t[i].id << ' ' << t[i].x << ' ' << t[i].y << ' ' << t[i].z << ' ' << t[i].sum << endl;
+	return 0;	
+} 
