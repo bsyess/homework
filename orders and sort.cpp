@@ -24,7 +24,7 @@ int main()
 	a[5] = "Please input info of the three students:";
 	a[7] = "You are trying to Make things ordered";
 	a[8] = "You are about to Quit";
-	a[9] = "Wrong Input";
+	a[9] = "Wrong input";
 	
 	for(int i = 1;i <= 4;++i)
 	{
