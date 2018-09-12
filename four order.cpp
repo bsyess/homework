@@ -10,9 +10,9 @@ int main()
 	a[2] = "2.Output\n";
 	a[3] = "3.Order\n";
 	a[4] = "4.Quit\n"; 
-	a[5] = "Your are trying to Input info";
-	a[6] = "Your are trying to Output info";
-	a[7] = "our are trying to Make things ordered";
+	a[5] = "You are trying to Input info";
+	a[6] = "You are trying to Output info";
+	a[7] = "You are trying to Make things ordered";
 	a[8] = "You are about to Quit";
 	a[9] = "Wrong Input";
 	
