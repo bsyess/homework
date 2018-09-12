@@ -35,13 +35,14 @@ int main()
 	cin >> c;
 	switch(c)
 	{
-		case 'i' : cout << a[5];break;
 		case 'm' : cout << a[7];break;
 		case 'q' : cout << a[8];break;
 		default : cout << a[9];
 	}
 	if(c == 'i')
 	{
+		cout << a[5];
+		
 		for(int i = 1;i <= 3;i++)
 		{
 			cin >> t[i].id >> x >> y >>z;
