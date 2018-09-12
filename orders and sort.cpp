@@ -22,7 +22,7 @@ int main()
 	a[3] = "3.Order\n";
 	a[4] = "4.Quit\n"; 
 	a[5] = "Please input info of the three students:";
-	a[7] = "our are trying to Make things ordered";
+	a[7] = "You are trying to Make things ordered";
 	a[8] = "You are about to Quit";
 	a[9] = "Wrong Input";
 	
