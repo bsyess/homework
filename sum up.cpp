@@ -15,6 +15,6 @@ int main()
 			t[i].sum = t[i].x + t[i].y + t[i].z;
 		}
 		for(int i = 1;i <= 3;i++)
-			printf("%d %.lf %.1lf %.1lf\n",t[i].id,t[i].x,t[i].y,t[i].z);
+			printf("%d  %.lf  %.1lf  %.1lf\n",t[i].id,t[i].x,t[i].y,t[i].z);
 			return 0;			
 } 
